@@ -1,12 +1,10 @@
 """Build deduplicated street-name tables from the IBGE CNEFE file for Piracicaba."""
 
 from __future__ import annotations
-
 import io
 import zipfile
 from pathlib import Path
 from urllib.request import urlopen
-
 import pandas as pd
 
 SOURCE_URL = (
@@ -22,11 +20,9 @@ COLUMNS = [
     "NOM_SEGLOGR",
 ]
 
-
 def download_zip(url: str = SOURCE_URL) -> bytes:
     with urlopen(url) as response:
         return response.read()
-
 
 def load_cnefe(zip_bytes: bytes) -> pd.DataFrame:
     with zipfile.ZipFile(io.BytesIO(zip_bytes)) as archive:
@@ -46,8 +42,7 @@ def load_cnefe(zip_bytes: bytes) -> pd.DataFrame:
     )
     return out
 
-
-def build_tables(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+def build_tables(df: pd.DataFrame):
     street_cols = ["NOM_TIPO_SEGLOGR", "NOM_TITULO_SEGLOGR", "NOM_SEGLOGR"]
     locality_cols = ["DSC_LOCALIDADE", *street_cols]
 
@@ -66,8 +61,7 @@ def build_tables(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     )
     return streets, locality_streets
 
-
-def main() -> None:
+def main():
     output_dir = Path("data/processed")
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -80,7 +74,6 @@ def main() -> None:
     print(f"Address records: {len(df):,}")
     print(f"Unique street denominations: {len(streets):,}")
     print(f"Locality-street combinations: {len(locality_streets):,}")
-
 
 if __name__ == "__main__":
     main()
