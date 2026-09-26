@@ -1,0 +1,29 @@
+category,scope,metric,value,note
+base,municipality,address_records,224750,CNEFE 2022 records
+base,municipality,unique_street_denominations,4086,Distinct type + title + street name
+base,municipality,locality_street_combinations,5603,Distinct locality + type + title + street name
+theme,Nova Piracicaba,flowers_and_plants,32,Exploratory thematic classification
+theme,Nova Piracicaba,birds,23,Exploratory thematic classification
+theme,Mario Dedini,trees_and_plants,16,Exploratory thematic classification
+theme,Mario Dedini,stones_and_gems,8,Exploratory thematic classification
+theme,Cidade Jardim,countries,9,Exploratory thematic classification
+title,municipality,Doutor,102,Unique type + title + name
+title,municipality,Doutora,1,Unique type + title + name
+title,municipality,Professor,74,Unique type + title + name
+title,municipality,Professora,29,Unique type + title + name
+surname,municipality,Furlan,22,Distinct honorary names
+surname,municipality,Trevisan,19,Distinct honorary names
+surname,municipality,Ometto,9,Distinct honorary names
+surname,municipality,Dedini,8,Distinct honorary names
+surname,municipality,Pecorari,8,Distinct honorary names
+surname,municipality,Zanin,8,Distinct honorary names
+surname,municipality,Guidotti,6,Distinct honorary names
+surname,municipality,Razera,5,Distinct honorary names
+surname,municipality,Sturion,5,Distinct honorary names
+surname,municipality,Formaggio,5,Distinct honorary names
+first_name,municipality,Antonio,180,First token in NOM_SEGLOGR among unique denominations
+first_name,municipality,Jose,180,First token in NOM_SEGLOGR among unique denominations
+first_name,municipality,Joao,146,First token in NOM_SEGLOGR among unique denominations
+first_name,municipality,Luiz,96,First token in NOM_SEGLOGR among unique denominations
+first_name,municipality,Maria,92,First token in NOM_SEGLOGR among unique denominations
+first_name,municipality,Francisco,74,First token in NOM_SEGLOGR among unique denominations
