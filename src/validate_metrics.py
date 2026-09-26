@@ -13,7 +13,7 @@ EXPECTED = {
     ("theme", "Mario Dedini", "trees_and_plants"): 16,
     ("theme", "Mario Dedini", "stones_and_gems"): 8,
     ("theme", "Cidade Jardim", "countries"): 9,
-    ("theme", "Jupia", "fish"): 8,
+    ("theme", "Jupiá", "fish"): 8,
     ("title", "municipality", "Doutor"): 102,
     ("title", "municipality", "Doutora"): 1,
     ("title", "municipality", "Professor"): 74,
