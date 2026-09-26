@@ -27,13 +27,35 @@ O objetivo não é apenas contar ruas, mas investigar o que o mapa da cidade rev
 - **4.086** denominações únicas considerando tipo + título + nome do logradouro.
 - **5.603** combinações localidade–logradouro quando o bairro/localidade é preservado.
 
+## Carrossel
+
+<p align="center">
+  <img src="carousel/01-cover.jpg" width="31%" alt="Slide 1">
+  <img src="carousel/02-bairros-tematicos.jpg" width="31%" alt="Slide 2">
+  <img src="carousel/03-nova-piracicaba.jpg" width="31%" alt="Slide 3">
+</p>
+<p align="center">
+  <img src="carousel/04-cidade-jardim.jpg" width="31%" alt="Slide 4">
+  <img src="carousel/05-sobrenomes.jpg" width="31%" alt="Slide 5">
+  <img src="carousel/06-titulos.jpg" width="31%" alt="Slide 6">
+</p>
+<p align="center">
+  <img src="carousel/07-resumo.jpg" width="31%" alt="Slide 7">
+</p>
+
 ## Estrutura
 
 ```
 .
 ├── README.md
 ├── carousel/
-│   └── 01-cover.jpg
+│   ├── 01-cover.jpg
+│   ├── 02-bairros-tematicos.jpg
+│   ├── 03-nova-piracicaba.jpg
+│   ├── 04-cidade-jardim.jpg
+│   ├── 05-sobrenomes.jpg
+│   ├── 06-titulos.jpg
+│   └── 07-resumo.jpg
 ├── data/
 │   └── insights_summary.csv
 ├── docs/
