@@ -1,0 +1,16 @@
+slide,metric,scope,value,unit
+2,flowers_plants,Nova Piracicaba,32,street names
+2,birds,Nova Piracicaba,23,street names
+2,trees,Mario Dedini,16,street names
+2,stones_gems,Mario Dedini,8,street names
+2,countries,Cidade Jardim,9,street names
+2,fish,Jupia,8,street names
+5,surname_Furlan,Piracicaba,22,distinct honorary names
+5,surname_Trevisan,Piracicaba,19,distinct honorary names
+5,surname_Ometto,Piracicaba,9,distinct honorary names
+5,surname_Dedini,Piracicaba,8,distinct honorary names
+5,surname_Pecorari,Piracicaba,8,distinct honorary names
+6,title_Doutor,Piracicaba,102,unique street denominations
+6,title_Doutora,Piracicaba,1,unique street denominations
+6,title_Professor,Piracicaba,74,unique street denominations
+6,title_Professora,Piracicaba,29,unique street denominations
