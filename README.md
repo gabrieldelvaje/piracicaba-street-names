@@ -8,7 +8,7 @@ A pergunta central é simples:
 
 A análise usa o **CNEFE — Cadastro Nacional de Endereços para Fins Estatísticos**, do **Censo Demográfico 2022 / IBGE**, para organizar os logradouros por localidade, eliminar repetições de endereços e investigar temas recorrentes, sobrenomes, títulos e outros padrões de nomenclatura.
 
-![Capa do carrossel](assets/carousel/01-cover.jpg)
+![Capa do carrossel](carousel/01-cover.jpg)
 
 ## Pergunta de pesquisa
 
@@ -118,31 +118,31 @@ As sete imagens abaixo são as artes finais do projeto.
 
 ### 1. As ruas de Piracicaba têm padrões escondidos
 
-![Slide 1](assets/carousel/01-cover.jpg)
+![Slide 1](carousel/01-cover.jpg)
 
 ### 2. Em muitos bairros, os nomes não são aleatórios
 
-![Slide 2](assets/carousel/02-bairros-tematicos.jpg)
+![Slide 2](carousel/02-bairros-tematicos.jpg)
 
 ### 3. Nova Piracicaba virou um jardim
 
-![Slide 3](assets/carousel/03-nova-piracicaba.jpg)
+![Slide 3](carousel/03-nova-piracicaba.jpg)
 
 ### 4. Cidade Jardim esconde um mapa-múndi
 
-![Slide 4](assets/carousel/04-cidade-jardim.jpg)
+![Slide 4](carousel/04-cidade-jardim.jpg)
 
 ### 5. As ruas também guardam famílias
 
-![Slide 5](assets/carousel/05-sobrenomes.jpg)
+![Slide 5](carousel/05-sobrenomes.jpg)
 
 ### 6. O mapa revela quem era homenageado
 
-![Slide 6](assets/carousel/06-titulos.jpg)
+![Slide 6](carousel/06-titulos.jpg)
 
 ### 7. Em resumo
 
-![Slide 7](assets/carousel/07-resumo.jpg)
+![Slide 7](carousel/07-resumo.jpg)
 
 ## Metodologia
 
@@ -300,8 +300,7 @@ Essas perguntas exigem fontes adicionais, como leis municipais, arquivos da Câm
 ## Estrutura do repositório
 
 ```text
-assets/
-  carousel/
+carousel/
     01-cover.jpg
     02-bairros-tematicos.jpg
     03-nova-piracicaba.jpg
