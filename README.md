@@ -1,5 +1,7 @@
 # Piracicaba Street Names
 
+![Capa do carrossel](carousel/01-cover.jpg)
+
 Data story sobre os nomes das ruas de Piracicaba (SP): padrões temáticos por bairro, sobrenomes recorrentes, títulos honoríficos e outras marcas de memória urbana.
 
 ## O projeto
@@ -19,20 +21,41 @@ O objetivo não é apenas contar ruas, mas investigar o que o mapa da cidade rev
 - Entre os títulos explícitos, aparecem fortes assimetrias: **Doutor (102) × Doutora (1)** e **Professor (74) × Professora (29)**.
 - Os títulos não equivalem ao total de homens e mulheres homenageados; são apenas uma característica textual dos nomes das vias.
 
+## Base analisada
+
+- **224.750** registros de endereço no arquivo municipal do CNEFE.
+- **4.086** denominações únicas considerando tipo + título + nome do logradouro.
+- **5.603** combinações localidade–logradouro quando o bairro/localidade é preservado.
+
 ## Estrutura
 
 ```
 .
 ├── README.md
-├── README.pt-BR.md
+├── carousel/
+│   └── 01-cover.jpg
 ├── data/
 │   └── insights_summary.csv
 ├── docs/
 │   ├── insights.md
 │   └── methodology.md
-└── src/
-    └── build_streets.py
+├── src/
+│   └── build_streets.py
+├── .gitignore
+└── requirements.txt
 ```
+
+## Reproduzir o processamento
+
+```bash
+pip install -r requirements.txt
+python src/build_streets.py
+```
+
+O script baixa o arquivo oficial do IBGE e gera duas tabelas em `data/processed/`:
+
+- `streets_unique.csv`
+- `streets_by_locality.csv`
 
 ## Fonte
 
@@ -53,7 +76,7 @@ O CNEFE é uma base de endereços, não um cadastro histórico de homenagens. Po
 - categorias temáticas foram identificadas de forma exploratória e devem ser validadas quando usadas como afirmações históricas;
 - diferenças de grafia e registros de um mesmo logradouro em diferentes localidades podem exigir padronização adicional.
 
-Veja [docs/methodology.md](docs/methodology.md) para detalhes.
+Veja [docs/methodology.md](docs/methodology.md) para detalhes e [docs/insights.md](docs/insights.md) para a leitura completa dos padrões.
 
 ## Autor
 
